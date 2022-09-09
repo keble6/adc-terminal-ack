@@ -6,7 +6,7 @@ radio.onReceivedString(function (receivedString) {
         outString = "" + outString + receivedString
         serial.writeLine(outString)
         // This is used by the sender - it has to receive ack before sending next data
-        radio.sendString("ack")
+        radio.sendString("ak")
         outString = ""
     }
 })
